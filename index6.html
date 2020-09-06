@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>task6</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var sec = prompt("enter second left")
+    sec = parseInt(sec)
+    console.log(sec)
+    var hour = Math.floor(sec/3600)
+
+    if (hour < 10 && hour > 4) {
+      alert(sec + "\n" + "Осталось " + hour + " часов")
+    } else if (hour < 5 && hour > 1) {
+      alert(sec + "\n" + "Осталось " + hour + " часа")
+    } else if (hour == 1) {
+      alert("Остался " + "\n" + hour + " час")
+    } else if (hour < 1) {
+      var hour = Math.ceil(sec/3600)
+      alert("Осталось менее часa")
+    }
+  </script>
+</body>
+</html>

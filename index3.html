@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>task3</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var login = prompt("Enter login");
+    if (login === "admin") { 
+      var password = prompt('Enter password');
+      if (password === "BlackOverlord") { 
+        alert("Welcome!");
+      } else if (password !== "BlackOverlord") {
+          alert("Wrong Password!");
+      } else {
+          alert("Login canceled");
+      } 
+
+    } else if (login !== "admin") {
+        alert("Unknown user");
+    } else {
+        alert("Login canceled");
+    }
+  </script>
+</body>
+</html>
